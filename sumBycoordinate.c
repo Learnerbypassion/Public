@@ -47,4 +47,7 @@ int main(){
     printf("The sum of the sub array is: ");
     printf("%d", sum(l1,r1,l2,r2,c,arr));
     return 0;
+    printf("Press enter to close...");
+    getchar();
+    getchar();
 }
