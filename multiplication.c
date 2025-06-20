@@ -28,6 +28,7 @@ int main(){
     // 2nd Matrix:
     printf("Enter the row of the second matrix: ");
     scanf("%d", &c);
+    if(b == c){ 
     printf("Enter the column of the second matrix: ");
     scanf("%d", &d);
     int brr[c][d];
@@ -37,7 +38,7 @@ int main(){
             scanf("%d", &brr[i][j]);
         }
     }
-    if(b == c){
+    
         int res[a][d];
         int cr = b;
         for(int i=0;i<a;i++){
@@ -48,7 +49,22 @@ int main(){
                 }
             }
         }
-        printf("The multiplication of the matrices: \n");
+        printf("\nOutput: \n");
+        printf("\n");
+        for(int i=0;i<a;i++){
+            for(int j=0;j<b;j++){
+                printf("%d ", arr[i][j]);
+            }
+            printf("\n");
+        }
+        printf("(*)\n");
+        for(int i=0;i<c;i++){
+            for(int j=0;j<d;j++){
+                printf("%d ", brr[i][j]);
+            }
+            printf("\n");
+        }
+        printf("(=)\n");
         for(int i=0;i<a;i++){
             for(int j=0;j<d;j++){
                 printf("%d ", res[i][j]);
